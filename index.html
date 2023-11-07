@@ -30,13 +30,13 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="css/fonts.css">
 
-        <!-- Google Fonts -->     
+        <!-- Google Fonts     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
         
-        <!-- Fonts Awesome -->
-        <script src="https://kit.fontawesome.com/b6317669d1.js" crossorigin="anonymous"></script>
+         Fonts Awesome -->
+        <!-- <script src="https://kit.fontawesome.com/b6317669d1.js" crossorigin="anonymous"></script> -->
 
         <!--Styles-->
         <link rel="stylesheet" href="css/normalize.css">
@@ -47,84 +47,77 @@
         <link rel="stylesheet" href="css/media.css">
     </head>
 
-    <body class="wrapper">
+    <body>
+        <!-- header -->
+        <header class="page-header">
+            <div class="container">
+                <div class="page_nav_inner">
+                    <nav class="page_nav">
+                        <ul class="nav_list">
+                            <li><a href="">Про мене</a></li>
+                            <li><a href="">Міні-гра 2048</a></li>
+                            <li><a href="">Галерея</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-        <div class="parallax-effect-container">
-            <div class="parallax-effect-image"></div>
-
-            <div class="parallax-effect-content">
-                <!-- header -->
-                <header class="page-header">
-                    <div class="container">
-                        <div class="page_nav_inner">
-                            <nav class="page_nav">
-                                <ul class="nav_list">
-                                    <li><a href="">Про мене</a></li>
-                                    <li><a href="">Міні-гра 2048</a></li>
-                                    <li><a href="">Галерея</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="header_text_inner">
-                            <h1>Про мене</h1>
-                            <p>Вивчаю фронтенд розробку.</p>
-                        </div>
-                    </div>
-                </header>
-
-                <!-- main -->
-                <main>
-                    <section class="about" id="about">
-                        <div class="container">
-                            <div class="about_inner">
-                                <h2 class="about_heading">Міні-гра 2048</h2>
-                                <p>2048 — відеогра, початково браузерна, написана 19-річним італійським розробником Габріелем Чіруллі (італ. Gabriele Cirulli) мовою програмування JavaScript. Гра є числовою головоломкою з полем у формі квадрата 4x4 клітинки. Мета гри — складаючи плитки з числами, отримати плитку номіналу «2048», звідки й назва (але можна продовжити грати). Код гри відкритий і викладений на сторінці розробника в GitHub. </p>
-                            </div> 
-                        </div>
-                    </section>
-
-                    <section class="gallery" id="benefits">
-                        <div class="container">
-                            <h2 class="gallery_heading">Галерея</h2>
-                            <p></p>
-                        </div>
-                    </section>
-
-                    <section class="game">
-                        <div class="container">
-                            <h2 class="visually-hidden">Гра</h2>
-                            <div class="game_cont">
-                                <img src="" alt="" class="temp_game_image">
-                            </div>
-                        </div>
-                    </section>
-                </main>
-
-                <!-- footer -->
-                <footer class="page_footer">
-                    <div class="container">
-                        <form action="/form-page" method="post" autocomplete="on" name="common">
-                            <div class="form_inner">
-                                <label for="name">Ім'я:</label><br>
-                                <input type="text" id="name" name="user_name">
-                            </div>
-
-                            <div class="form_inner">
-                                <label for="email">Email:</label><br>
-                                <input type="email" id="email" name="user_email">
-                            </div>
-
-                            <div class="form_inner">
-                                <label for="summary">Summary:</label><br>
-                                <textarea name="summary" id="summary" cols="30" rows="10"></textarea>
-                            </div>
-
-                            <button type="submit" class="form_btn">Відправити</button>
-                        </form>
-                    </div>
-                </footer>
+                <div class="header_text_inner">
+                    <h1>Про мене</h1>
+                    <p>Вивчаю фронтенд розробку.</p>
+                </div>
             </div>
-        </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about_inner">
+                        <h2 class="about_heading">Міні-гра 2048</h2>
+                        <p>2048 — відеогра, початково браузерна, написана 19-річним італійським розробником Габріелем Чіруллі (італ. Gabriele Cirulli) мовою програмування JavaScript. Гра є числовою головоломкою з полем у формі квадрата 4x4 клітинки. Мета гри — складаючи плитки з числами, отримати плитку номіналу «2048», звідки й назва (але можна продовжити грати). Код гри відкритий і викладений на сторінці розробника в GitHub. </p>
+                    </div> 
+                </div>
+            </section>
+
+            <section class="gallery" id="benefits">
+                <div class="container">
+                    <h2 class="gallery_heading">Галерея</h2>
+                    <p></p>
+                </div>
+            </section>
+
+            <section class="game">
+                <div class="container">
+                    <h2 class="visually-hidden">Гра</h2>
+                    <div class="game_cont">
+                        <img src="" alt="" class="temp_game_image">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="page_footer">
+            <div class="container">
+                <form action="/form-page" method="post" autocomplete="on" name="common">
+                    <div class="form_inner">
+                        <label for="name">Ім'я:</label><br>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+
+                    <div class="form_inner">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="user_email">
+                    </div>
+
+                    <div class="form_inner">
+                        <label for="summary">Summary:</label><br>
+                        <textarea name="summary" id="summary" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit" class="form_btn">Відправити</button>
+                </form>
+            </div>
+        </footer>
     </body>
 </html>
