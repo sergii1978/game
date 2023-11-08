@@ -69,6 +69,16 @@ a:focus, a:link, a:active {
   color: #ffffff;
 }
 
+.nav_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav_list_item {
+  margin: 0 auto;
+}
+
 .header_text_inner {
   margin-bottom: 20px;
   padding: 10px;
