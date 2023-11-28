@@ -181,6 +181,52 @@ h1, h2 {
   text-shadow: 2px 2px 5px #8D7867;
 }
 
+.tooltip_src {
+  padding: 0 10px;
+
+  font-weight: 900;
+
+  color: #8D7867;
+}
+
+.tooltip_src:hover {
+  text-shadow: 2px 4px 2px #ffffff;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.tooltip_img {
+  top: 5%;
+  left: 0;
+  right: 0;
+
+  margin: 0 auto;
+
+  border-radius: 50%;
+}
+
+.tooltip_src + .tooltip_img{
+  visibility:hidden;
+  position:absolute;
+  padding:20px;
+
+  background-color:rgba(0,0,0,0.8);
+
+  opacity:0;
+  
+  /* transform:translate(-50%,20px); */
+  transition:1s;
+
+  pointer-events:none;   
+}
+
+.tooltip_src:hover + .tooltip_img{
+  opacity:1;
+  visibility:visible; 
+}
+
 .study_link {
   display: inline-block;
   padding: 20px 10px;
